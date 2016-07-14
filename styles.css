@@ -20,9 +20,13 @@ html, body {
     background-image: url("img/frost.jpg");
     background-size: cover;
 }
+.about-description {
+  margin: 0;
+  padding: 20px;
+}
 .name {
     margin: 0;
-    width: 100px;
+    width: 190px;
 }
 .name h1 {
     padding-top: 20px;
@@ -32,6 +36,13 @@ html, body {
     color: #333;
 }
 
+.name h2 {
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: 20px;
+  margin: 0 auto;
+  color: #333;
+}
 /*SKILLS*/
 
 .skill-logos {
@@ -59,7 +70,12 @@ html, body {
 
 /*DEV PROJECTS*/
 
+.project-description {
+  margin: 0;
+  padding: 20px;
+}
 .project-img {
+    padding-bottom: 20px;
     margin: 0 auto;
     width: 100%;
     height: 100%;
@@ -72,6 +88,7 @@ html, body {
 }
 
 .projects-content a {
+  padding-top: 20px;
   text-decoration: none;
   color: purple;
 }
@@ -132,7 +149,6 @@ button.accordion-segment#projects-button.active, button.accordion-segment#projec
 
 .panel {
   text-align: center;
-  padding: 0 18px;
   background-color: white;
   max-height: 0;
   overflow: hidden;
@@ -169,15 +185,25 @@ button.accordion-segment#projects-button.active, button.accordion-segment#projec
   padding-bottom: 40px;
 }
 
-@media (min-width: 430px) {
+@media (min-width: 520px) {
   p, a {
     font-size: 20px;
   }
   .header {
     height: 600px;
   }
+  .name {
+    margin: 0;
+    width: 280px;
+  }
   .name h1 {
+    font-size: 56px;
     padding-top: 60px;
+    padding-left: 60px;
+  }
+  .name h2 {
+    font-size: 25px;
+    padding-top: 20px;
     padding-left: 60px;
   }
   .img-div {
@@ -188,6 +214,15 @@ button.accordion-segment#projects-button.active, button.accordion-segment#projec
     padding-left: 10px;
     padding-right: 10px;
   }
+  button.accordion-segment{
+    height: 100px;
+    font-size: 25px;;
+  }
+.footer-contact i {
+  font-size: 46px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
 
 }
 
@@ -198,9 +233,18 @@ button.accordion-segment#projects-button.active, button.accordion-segment#projec
   .header {
     height: 800px;
   }
+  .name {
+    width: 360px;
+  }
   .name h1 {
     padding-top: 80px;
     padding-left: 80px;
+    font-size: 70px;
+  }
+  .name h2 {
+    padding-top: 20px;
+    padding-left: 80px;
+    font-size: 32px;
   }
   .img-div {
     width: 260px;
@@ -214,19 +258,43 @@ button.accordion-segment#projects-button.active, button.accordion-segment#projec
     height: 160px;
     font-size: 36px;;
   }
+  .projects-content h1 {
+    font-size: 34px;
+    padding-top: 30px;
+    margin: 0;
+  }
+  .projects-content a {
+    font-weight: bold;
+    color: #404040;
+  }
+  .project-link {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 @media (min-width: 1420px) {
   .header {
     height: 1000px;
   }
+  .name {
+    width: 470px;
+  }
   .name h1 {
     font-size: 80px;
     padding-top: 120px;
     padding-left: 120px;
   }
+  .name h2 {
+    padding-left: 120px;
+    padding-top: 40px;
+    font-size: 40px;
+  }
+  .about-description{
+
+  }
   button.accordion-segment{
-    height: 160px;
+    height: 175px;
     font-size: 36px;
   }
 }

@@ -17,8 +17,8 @@ html, body {
     display: flex;
     width: 100%;
     height: 300px;
-    background-image: url("img/frost.jpg");
-    background-size: cover;
+    background-image: url("img/puginblanket.jpg");
+  background-size: cover;
 }
 .about-description {
   margin: 0;
@@ -33,7 +33,7 @@ html, body {
     padding-left: 20px;
     font-size: 40px;
     margin: 0 auto;
-    color: #333;
+    color: #dbffdf;
 }
 
 .name h2 {
@@ -41,7 +41,7 @@ html, body {
   padding-left: 20px;
   font-size: 20px;
   margin: 0 auto;
-  color: #333;
+  color: #dbffdf;
 }
 /*SKILLS*/
 
@@ -80,6 +80,12 @@ html, body {
     width: 100%;
     height: 100%;
 }
+.project-img-trextr {
+    padding-bottom: 20px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
 .project-description h1 {
   font-size: 34px;
 }
@@ -88,7 +94,16 @@ html, body {
     width: 100%;
     height: 100%;
 }
-
+.project-img-trextr img {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.project-img-desktop img {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
 .projects-content a {
   padding-top: 20px;
   text-decoration: none;
@@ -104,6 +119,9 @@ html, body {
   padding-bottom: 20px;
 }
 .project-link-desktop{
+  display: none;
+}
+.project-img-desktop {
   display: none;
 }
 /*ACCORDION*/
@@ -236,6 +254,10 @@ button.accordion-segment#projects-button.active, button.accordion-segment#projec
   }
   .header {
     height: 800px;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
   }
   .name {
     width: 360px;
@@ -281,6 +303,10 @@ button.accordion-segment#projects-button.active, button.accordion-segment#projec
 @media (min-width: 1420px) {
   .header {
     height: 1000px;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
   }
   .name {
     width: 470px;
@@ -312,7 +338,15 @@ button.accordion-segment#projects-button.active, button.accordion-segment#projec
   }
   .project-img{
     padding-right: 30px;
-    width: 240%;
+    width: 430%;
+  }
+  .project-img-desktop {
+    display: block;
+    padding-left: 30px;
+    width: 430%;
+  }
+  .project-img-trextr {
+    display: none;
   }
   .project-link{
     display: none;
